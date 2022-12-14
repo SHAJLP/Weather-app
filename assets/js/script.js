@@ -1,4 +1,6 @@
-
+// AS A traveler
+// I WANT to see the weather outlook for multiple cities
+// SO THAT I can plan a trip accordingly
 
 var apiKey ="e2f1ef6b8784fe76a3a4ad864d917913"
 var today = moment().format('L');
