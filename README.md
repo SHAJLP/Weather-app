@@ -15,5 +15,3 @@ Deployed project can be viewed via  https://shajlp.github.io/Weather-app/
 
 Images included
 
-![screenshot-of-application](./assets/weather 1.png)
-![screenshot-of-application](./assets/weather 2.png)
