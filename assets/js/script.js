@@ -85,7 +85,7 @@ function currentCondition(city) {
 function futureCondition(lat, lon) {
 
     // presents five day forecast
-    var futureURL = `http://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=current,minutely,hourly,alerts&appid=${apiKey}`;
+    var futureURL = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=current,minutely,hourly,alerts&appid=${apiKey}`;
 
     $.ajax({
         url: futureURL,
@@ -100,6 +100,7 @@ function futureCondition(lat, lon) {
                 icon: futureResponse.daily[i].weather[0].icon,
                 temp: futureResponse.daily[i].temp.day,
                 humidity: futureResponse.daily[i].humidity
+                
             };
 
             var currDate = moment.unix(cityInfo.date).format("MM/DD/YYYY");
